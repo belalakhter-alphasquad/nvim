@@ -10,7 +10,6 @@ vim.api.nvim_set_keymap('n', '<Space>', '<Nop>', {noremap = true, silent = true}
 vim.api.nvim_set_keymap('n', '<C-S-Left>', ':vertical resize -5<CR>', {noremap = true, silent = true})
 -- Map <C-Left> to increase window width
 vim.api.nvim_set_keymap('n', '<C-S-Right>', ':vertical resize +5<CR>', {noremap = true, silent = true})
--- new file 
-vim.api.nvim_set_keymap('n', '<Space>n', ':NvimTreeCreateFile<CR>', {noremap = true, silent = true})
-
+-- Del file  
+vim.api.nvim_set_keymap('n', '<Space>d', ':call neotree#plugin#delete#call()<CR>', {noremap = true, silent = true})
 
